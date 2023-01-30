@@ -51,6 +51,14 @@ genfscon sysfs /devices/platform/soc/1d84000.ufshc/clkgate_enable               
 # USB
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700/typec   u:object_r:sysfs_usb:s0
 
+# Vibrator
+genfscon sysfs /bus/i2c/drivers/aw8697_haptic/2-005a/activate                   u:object_r:sysfs_haptics:s0
+genfscon sysfs /bus/i2c/drivers/aw8697_haptic/2-005a/duration                   u:object_r:sysfs_haptics:s0
+genfscon sysfs /bus/i2c/drivers/aw8697_haptic/2-005a/index                      u:object_r:sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/activate           u:object_r:sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/duration           u:object_r:sysfs_haptics:s0
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/index              u:object_r:sysfs_haptics:s0
+
 # Wakeup source stats
 genfscon sysfs /devices/0306_02.01.00/wakeup                                                                                                       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/goodix_ts.0/wakeup                                                                                                u:object_r:sysfs_wakeup:s0
