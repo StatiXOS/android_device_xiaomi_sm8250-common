@@ -109,6 +109,7 @@ vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_multiplier=2
 vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=true
+ro.config.media_vol_steps=25
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
