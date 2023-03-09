@@ -321,4 +321,13 @@
     <!-- The duration (in milliseconds) that should be applied to waveform vibrations that ends in
          non-zero amplitudes, to bring the vibrator amplitude down to zero using this timing. -->
     <integer name="config_vibrationWaveformRampDownDuration">50</integer>
+
+
+    <!-- The behavior when the system detects it has abusive current drains, whether or not to
+         move the app to the restricted standby bucket level.
+         True - we'll move the app to restricted standby bucket as long as its bg battery usage
+         goes beyond the threshold, False - we'll not move it.
+         Note: This should be only enabled on devices with high confidence on power measurement.
+    -->
+    <bool name="config_bg_current_drain_auto_restrict_abusive_apps">true</bool>
 </resources>
