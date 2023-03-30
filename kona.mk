@@ -419,9 +419,7 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 # Sensors
-PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service
+$(call inherit-product, vendor/hardware/xiaomi/hidl/sensors/sensors_product.mk)
 
 PRODUCT_PACKAGES += \
     libsensorndkbridge
